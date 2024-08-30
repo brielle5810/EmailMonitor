@@ -45,6 +45,9 @@ def connect_email():
         # send discord alert, ping me!
         send_discord_alert(note)
 
+    else:
+        print("No new emails from the desired email.")
+
     # close, logout!
     imap.close()
     imap.logout()
